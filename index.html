@@ -98,7 +98,8 @@
 
         /* Banner Beneficios */
         .benefits-bar {
-            border-y: 1px solid var(--border-color);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
             background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(10px);
             padding: 25px 20px;
@@ -181,7 +182,8 @@
         /* Sección Dudas / Explicativa */
         .info-section {
             background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, var(--bg-dark) 100%);
-            border-y: 1px solid var(--border-color);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .info-subtitle {
@@ -226,23 +228,82 @@
             font-size: 0.95em;
         }
 
-        /* Averías Lista */
-        .averias-list {
-            list-style: none;
-            max-width: 700px;
-            margin: auto;
+        /* Acordeones Desplegables de Averías */
+        .averias-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: -25px auto 35px;
+            font-size: 1.05em;
         }
 
-        .averias-list li {
+        .averias-accordion {
+            max-width: 750px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .accordion-item {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--border-color);
-            padding: 15px 20px;
-            border-radius: 10px;
-            margin-bottom: 12px;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .accordion-item[open] {
+            background: var(--bg-card);
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        .accordion-header {
+            padding: 18px 20px;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
             display: flex;
             align-items: center;
             gap: 12px;
-            color: var(--text-main);
+            list-style: none;
+            position: relative;
+        }
+
+        .accordion-header::-webkit-details-marker {
+            display: none;
+        }
+
+        .accordion-header::after {
+            content: '❯';
+            position: absolute;
+            right: 20px;
+            font-size: 0.8em;
+            color: var(--text-muted);
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-item[open] .accordion-header::after {
+            transform: rotate(90deg);
+            color: var(--accent-blue);
+        }
+
+        .header-text {
+            padding-right: 20px;
+            font-size: 0.98em;
+        }
+
+        .accordion-content {
+            padding: 0 20px 20px 46px;
+            color: var(--text-muted);
+            font-size: 0.95em;
+            line-height: 1.6;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Marcas */
@@ -280,7 +341,7 @@
             font-size: 0.95em;
         }
 
-        /* Map Embed Container */
+        /* Mapa */
         .map-container {
             width: 100%;
             height: 380px;
@@ -299,7 +360,7 @@
             font-size: 0.9em;
         }
 
-        /* WhatsApp Button Floating */
+        /* Botón WhatsApp Flotante */
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -323,10 +384,10 @@
             transform: scale(1.05);
         }
 
-        /* Responsive tweaks */
         @media (max-width: 600px) {
             h1 { font-size: 2.1em; }
             .section-padding { padding: 45px 20px; }
+            .accordion-content { padding-left: 20px; }
         }
     </style>
 </head>
@@ -422,16 +483,62 @@
         </div>
     </section>
 
-    <!-- Averías Frecuentes Solucionadas -->
+    <!-- Sección Problemas / Desplegables -->
     <section class="section-padding">
-        <h2 class="section-title">Averías Comunes que Reparamos</h2>
-        <ul class="averias-list">
-            <li><span>❌</span> El equipo enciende pero no da imagen o se queda en negro.</li>
-            <li><span>❌</span> Lentitud extrema al encender o al abrir programas.</li>
-            <li><span>❌</span> Sobrecalentamiento, apagados repentinos o ruido del ventilador.</li>
-            <li><span>❌</span> Infecciones por virus, publicidad emergente o malware.</li>
-            <li><span>❌</span> Fallo en el conector de carga, batería, teclado o pantalla.</li>
-        </ul>
+        <h2 class="section-title">¿Tu ordenador tiene alguno de estos problemas?</h2>
+        <p class="averias-subtitle">No te preocupes. Revisamos tu equipo, encontramos el problema y te ofrecemos la solución más adecuada.</p>
+
+        <div class="averias-accordion">
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="icon-x">❌</span>
+                    <span class="header-text">El equipo enciende pero no da imagen o se queda en negro</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Puede deberse a un problema con la pantalla, la memoria, la tarjeta gráfica o algún otro componente. Revisamos el equipo para encontrar la causa y solucionar el problema.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="icon-x">❌</span>
+                    <span class="header-text">Lentitud extrema al encender o al abrir programas</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Si tu ordenador tarda demasiado en arrancar o abrir programas, puede necesitar una limpieza, optimización, más memoria RAM o un cambio a SSD. Revisamos qué está causando la lentitud y te recomendamos la mejor solución.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="icon-x">❌</span>
+                    <span class="header-text">Sobrecalentamiento, apagados repentinos o ruido del ventilador</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>El polvo acumulado o un problema de refrigeración puede hacer que el ordenador se caliente demasiado y se apague. Realizamos una limpieza y revisión del sistema de refrigeración para ayudar a evitar estos problemas.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="icon-x">❌</span>
+                    <span class="header-text">Infecciones por virus, publicidad emergente o malware</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Los virus y programas maliciosos pueden ralentizar el equipo, mostrar publicidad no deseada o incluso poner en riesgo tus archivos. Revisamos y limpiamos el equipo para eliminar estas amenazas y mejorar su seguridad.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="icon-x">❌</span>
+                    <span class="header-text">Fallo en el conector de carga, batería, teclado o pantalla</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Si algún componente de tu portátil ha dejado de funcionar correctamente, revisamos el fallo y comprobamos si es posible repararlo o si es necesario sustituir la pieza afectada.</p>
+                </div>
+            </details>
+        </div>
     </section>
 
     <!-- Marcas Compatibles -->
