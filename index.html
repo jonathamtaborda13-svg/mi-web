@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparación de Portátiles en Elche | Soporte IT</title>
-    <meta name="description" content="Servicio técnico especializado en reparación de ordenadores en Elche. Cambio de pantallas, baterías, mejoramos el rendimiento del Pc con SSD y servicio a domicilio.">
+    <title>SolucionaPC | Reparación de Portátiles y Ordenadores en Elche</title>
+    <meta name="description" content="SolucionaPC - Tu ordenador, nuestra solución. Servicio técnico especializado en reparación de portátiles y ordenadores en Elche. Cambio de pantallas, SSD, limpieza y servicio a domicilio.">
     <meta name="google-site-verification" content="EnQuNtW2YldbrzU7lwMFZ_sAiqarZLurvquIS5WMbFg" />
     
     <!-- Favicon SVG Integrado (Icono de Portátil) -->
@@ -42,10 +42,46 @@
             overflow-x: hidden;
         }
 
+        /* Barra de Navegación / Marca */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .brand-logo {
+            font-size: 1.5em;
+            font-weight: 800;
+            color: #ffffff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand-logo span {
+            color: var(--accent-cyan);
+        }
+
+        .brand-slogan-nav {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            font-weight: 400;
+            display: none;
+        }
+
+        @media (min-width: 600px) {
+            .brand-slogan-nav { display: inline-block; }
+        }
+
         /* Hero Section */
         header {
             position: relative;
-            padding: 90px 20px 60px;
+            padding: 70px 20px 60px;
             text-align: center;
             background: radial-gradient(circle at top center, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
         }
@@ -71,11 +107,18 @@
             background: linear-gradient(135deg, #ffffff 0%, #a5f3fc 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .hero-tagline {
+            font-size: 1.3em;
+            color: var(--accent-cyan);
+            font-weight: 600;
             margin-bottom: 15px;
         }
 
         .hero-p {
-            font-size: 1.15em;
+            font-size: 1.1em;
             color: var(--text-muted);
             max-width: 650px;
             margin: 0 auto 30px;
@@ -396,11 +439,20 @@
 </head>
 <body>
 
+    <!-- Menú Superior / Logo de Marca -->
+    <nav>
+        <a href="#" class="brand-logo">
+            💻 Soluciona<span>PC</span>
+        </a>
+        <span class="brand-slogan-nav">Tu ordenador, nuestra solución</span>
+    </nav>
+
     <!-- Encabezado / Hero -->
     <header>
-        <span class="badge-hero">Soporte Informático Especializado</span>
-        <h1>Reparación de Portátiles en Elche</h1>
-        <p class="hero-p">Solucionamos cualquier fallo en tu ordenador. Servicio técnico rápido, garantizado y 100% transparente.</p>
+        <span class="badge-hero">Servicio Técnico Especializado</span>
+        <h1>SolucionaPC</h1>
+        <p class="hero-tagline">Tu ordenador, nuestra solución.</p>
+        <p class="hero-p">Reparación de portátiles y ordenadores en Elche. Solucionamos cualquier fallo con un servicio rápido, garantizado y 100% transparente.</p>
         <a href="https://wa.me/34610326261?text=Hola,%20necesito%20información%20sobre%20la%20reparación%20de%20un%20portátil" class="btn-cta">Pedir Presupuesto Gratis</a>
     </header>
 
@@ -604,7 +656,7 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>Soporte IT Elche &copy; 2026 - Todos los derechos reservados</p>
+        <p>SolucionaPC &copy; 2026 - Tu ordenador, nuestra solución. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Botón Flotante de WhatsApp -->
