@@ -493,38 +493,13 @@
             background-color: #128c7e;
         }
 
-        /* Sección Dudas / Explicativa */
-        .info-section {
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, var(--bg-dark) 100%);
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .info-subtitle {
+        /* Subtítulos descriptivos */
+        .info-subtitle, .averias-subtitle {
             text-align: center;
             color: var(--text-muted);
-            max-width: 700px;
-            margin: -25px auto 40px;
+            max-width: 650px;
+            margin: -25px auto 35px;
             font-size: 1em;
-        }
-
-        .info-box {
-            background: rgba(30, 41, 59, 0.4);
-            border-left: 4px solid var(--accent-blue);
-            border-radius: 0 12px 12px 0;
-            padding: 20px 25px;
-            margin-bottom: 20px;
-        }
-
-        .info-box h3 {
-            color: var(--accent-cyan);
-            font-size: 1.1em;
-            margin-bottom: 8px;
-        }
-
-        .info-box p {
-            color: var(--text-muted);
-            font-size: 0.95em;
         }
 
         .alert-box {
@@ -542,16 +517,8 @@
             font-size: 0.95em;
         }
 
-        /* Acordeones Desplegables de Averías */
-        .averias-subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            max-width: 650px;
-            margin: -25px auto 35px;
-            font-size: 1.05em;
-        }
-
-        .averias-accordion {
+        /* Acordeones Desplegables */
+        .averias-accordion, .faq-accordion {
             max-width: 750px;
             margin: 0 auto;
             display: flex;
@@ -608,7 +575,7 @@
         }
 
         .accordion-content {
-            padding: 0 20px 20px 46px;
+            padding: 0 20px 20px 20px;
             color: var(--text-muted);
             font-size: 0.95em;
             line-height: 1.6;
@@ -636,23 +603,6 @@
             font-weight: 600;
             color: var(--text-main);
             font-size: 0.9em;
-        }
-
-        /* Preguntas Frecuentes */
-        .faq-item {
-            border-bottom: 1px solid var(--border-color);
-            padding: 20px 0;
-        }
-
-        .faq-item h4 {
-            color: #ffffff;
-            font-size: 1.1em;
-            margin-bottom: 6px;
-        }
-
-        .faq-item p {
-            color: var(--text-muted);
-            font-size: 0.95em;
         }
 
         /* Mapa */
@@ -701,7 +651,6 @@
         @media (max-width: 600px) {
             h1 { font-size: 2.1em; }
             .section-padding { padding: 45px 20px; }
-            .accordion-content { padding-left: 20px; }
         }
     </style>
 </head>
@@ -813,27 +762,27 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Reinstalación de Sistema Operativo</strong></td>
-                        <td>Instalación limpia de Windows + controladores + optimización.</td>
-                        <td><span class="price-tag">Desde 35 €</span></td>
+                        <td><strong>Soporte Remoto Inmediato</strong></td>
+                        <td>Resolución de fallos de software y limpieza de virus a distancia.</td>
+                        <td><span class="price-tag">Desde 20 €</span></td>
                         <td style="text-align: center;">
-                            <a href="https://wa.me/34610326261?text=Hola,%20me%20interesa%20la%20Reinstalación%20de%20Sistema%20Operativo%20(Desde%2035%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                            <a href="https://wa.me/34610326261?text=Hola,%20quisiera%20consultar%20sobre%20el%20servicio%20de%20Soporte%20Remoto%20Inmediato%20(Desde%2020%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
                         </td>
                     </tr>
                     <tr>
-                        <td><strong>Soporte Remoto</strong></td>
-                        <td>Resolución de fallos de software y limpieza de virus a distancia.</td>
-                        <td><span class="price-tag">Desde 15 €</span></td>
+                        <td><strong>Reinstalación de Sistema Operativo</strong></td>
+                        <td>Instalación limpia de Windows + controladores + optimización.</td>
+                        <td><span class="price-tag">Desde 30 €</span></td>
                         <td style="text-align: center;">
-                            <a href="https://wa.me/34610326261?text=Hola,%20quisiera%20consultar%20sobre%20el%20servicio%20de%20Soporte%20Remoto%20Inmediato%20(Desde%2015%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                            <a href="https://wa.me/34610326261?text=Hola,%20me%20interesa%20la%20Reinstalación%20de%20Sistema%20Operativo%20(Desde%2030%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
                         </td>
                     </tr>
                     <tr>
                         <td><strong>Mantenimiento Físico y Limpieza</strong></td>
                         <td>Limpieza interna de polvo y cambio de pasta térmica.</td>
-                        <td><span class="price-tag">Desde 29 €</span></td>
+                        <td><span class="price-tag">Desde 25 €</span></td>
                         <td style="text-align: center;">
-                            <a href="https://wa.me/34610326261?text=Hola,%20quisiera%20solicitar%20un%20Mantenimiento%20Físico%20y%20Limpieza%20(Desde%2029%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                            <a href="https://wa.me/34610326261?text=Hola,%20quisiera%20solicitar%20un%20Mantenimiento%20Físico%20y%20Limpieza%20(Desde%2025%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
                         </td>
                     </tr>
                     <tr>
@@ -847,9 +796,9 @@
                     <tr>
                         <td><strong>Atención a Domicilio / Presencial</strong></td>
                         <td>Desplazamiento y diagnóstico de equipos en Elche.</td>
-                        <td><span class="price-tag">Desde 10 €</span></td>
+                        <td><span class="price-tag">Desde 35 €</span></td>
                         <td style="text-align: center;">
-                            <a href="https://wa.me/34610326261?text=Hola,%20necesito%20Atención%20a%20Domicilio%20o%20Presencial%20en%20Elche%20(Desde%2010%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                            <a href="https://wa.me/34610326261?text=Hola,%20necesito%20Atención%20a%20Domicilio%20o%20Presencial%20en%20Elche%20(Desde%2035%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
                         </td>
                     </tr>
                 </tbody>
@@ -861,7 +810,7 @@
     <section class="section-padding" style="background: rgba(15, 23, 42, 0.4); border-radius: 20px;">
         <h2 class="section-title">Agendar Cita Previa</h2>
         <p class="info-subtitle">Reserva tu turno de atención de forma rápida para evitar esperas.</p>
-        
+
         <div class="booking-grid">
             <div class="booking-card">
                 <h3>💻 Soporte Remoto Online</h3>
@@ -877,48 +826,15 @@
         </div>
     </section>
 
-    <!-- Sección de Asesoría / Dudas sobre el ordenador -->
-    <section class="info-section">
-        <div class="section-padding">
-            <h2 class="section-title">¿Tienes dudas sobre tu ordenador? Te ayudamos</h2>
-            <p class="info-subtitle">Descubre las soluciones más habituales para mejorar el rendimiento, solucionar problemas y mantener tu equipo en óptimas condiciones.</p>
-
-            <div class="info-box">
-                <h3>¿Cómo funciona la asistencia con Soporte Remoto?</h3>
-                <p>Nos conectamos a tu ordenador a través de un programa de conexión segura (como TeamViewer o AnyDesk) previa autorización tuya. Podrás ver en todo momento lo que hace el técnico en pantalla mientras soluciona la avería o configura tu sistema.</p>
-            </div>
-
-            <div class="info-box">
-                <h3>¿Por qué es bueno realizar una reinstalación de sistema operativo?</h3>
-                <p>Con el tiempo, el sistema operativo acumula archivos innecesarios, errores, programas y configuraciones que afectan al rendimiento. Una reinstalación limpia permite empezar desde cero con un sistema totalmente estable, solucionando bloqueos y fallos.</p>
-            </div>
-
-            <div class="info-box">
-                <h3>¿Para qué sirve el mantenimiento físico?</h3>
-                <p>El mantenimiento físico ayuda a eliminar el polvo y la suciedad acumulada en el interior del ordenador, especialmente en ventiladores y disipadores. Esto mejora la ventilación, reduce la temperatura y evita el desgaste prematuro de componentes.</p>
-            </div>
-
-            <div class="info-box">
-                <h3>¿Qué opciones hay para mejorar el rendimiento de mi ordenador?</h3>
-                <p>Dependiendo de las características de tu equipo, se puede ampliar la memoria RAM, instalar un disco SSD, optimizar el sistema o actualizar controladores para devolverle la velocidad original.</p>
-            </div>
-
-            <div class="alert-box">
-                <p>💡 <strong>Consejo Experto:</strong> Antes de realizar alguna actualización, es recomendable revisar el equipo para determinar qué componente está limitando su rendimiento y verificar si amerita o no la inversión.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Sección Problemas con enlace a WhatsApp personalizado por avería (6 Opciones) -->
     <section class="section-padding">
         <h2 class="section-title">¿Tu ordenador tiene alguno de estos problemas?</h2>
         <p class="averias-subtitle">No te preocupes. Revisamos tu equipo, encontramos el problema y te ofrecemos la solución más adecuada.</p>
 
         <div class="averias-accordion">
-            <!-- Opción 1 -->
             <details class="accordion-item">
                 <summary class="accordion-header">
-                    <span class="icon-x">❌</span>
+                    <span>❌</span>
                     <span class="header-text">El equipo enciende pero no da imagen o se queda en negro</span>
                 </summary>
                 <div class="accordion-content">
@@ -927,10 +843,9 @@
                 </div>
             </details>
 
-            <!-- Opción 2 -->
             <details class="accordion-item">
                 <summary class="accordion-header">
-                    <span class="icon-x">❌</span>
+                    <span>❌</span>
                     <span class="header-text">Lentitud extrema al encender o al abrir programas</span>
                 </summary>
                 <div class="accordion-content">
@@ -939,10 +854,9 @@
                 </div>
             </details>
 
-            <!-- Opción 3 -->
             <details class="accordion-item">
                 <summary class="accordion-header">
-                    <span class="icon-x">❌</span>
+                    <span>❌</span>
                     <span class="header-text">Sobrecalentamiento, apagados repentinos o ruido del ventilador</span>
                 </summary>
                 <div class="accordion-content">
@@ -951,10 +865,9 @@
                 </div>
             </details>
 
-            <!-- Opción 4 -->
             <details class="accordion-item">
                 <summary class="accordion-header">
-                    <span class="icon-x">❌</span>
+                    <span>❌</span>
                     <span class="header-text">Infecciones por virus, publicidad emergente o malware</span>
                 </summary>
                 <div class="accordion-content">
@@ -963,10 +876,9 @@
                 </div>
             </details>
 
-            <!-- Opción 5 -->
             <details class="accordion-item">
                 <summary class="accordion-header">
-                    <span class="icon-x">❌</span>
+                    <span>❌</span>
                     <span class="header-text">Fallo en el conector de carga, batería, teclado o pantalla</span>
                 </summary>
                 <div class="accordion-content">
@@ -975,10 +887,9 @@
                 </div>
             </details>
 
-            <!-- Opción 6 (No sé qué le pasa) -->
             <details class="accordion-item">
                 <summary class="accordion-header">
-                    <span class="icon-x">❓</span>
+                    <span>❓</span>
                     <span class="header-text">No sé qué le pasa a mi ordenador / Fallo sin identificar</span>
                 </summary>
                 <div class="accordion-content">
@@ -1003,39 +914,105 @@
         </div>
     </section>
 
-    <!-- Preguntas Frecuentes (FAQ) -->
+    <!-- Preguntas Frecuentes (FAQ) - Integrado y Desplegable -->
     <section class="section-padding" style="background: rgba(15, 23, 42, 0.4); border-radius: 20px;">
         <h2 class="section-title">Preguntas Frecuentes</h2>
-        <div style="max-width: 800px; margin: auto;">
-            <div class="faq-item">
-                <h4>¿Dónde realizan la reinstalación de sistema operativo en Elche?</h4>
-                <p>Realizamos el servicio de reinstalación y optimización limpia en nuestro establecimiento en C. Quinto Albio Horacio, 22, Elche, o si lo prefieres, mediante asistencia remota / a domicilio.</p>
-            </div>
+        <p class="info-subtitle">Resuelve tus dudas sobre nuestro servicio técnico, soporte remoto y mantenimiento.</p>
 
-            <div class="faq-item">
-                <h4>¿Qué necesito para solicitar el servicio de Soporte Remoto?</h4>
-                <p>Solo necesitas que tu ordenador pueda encender y tener una conexión a Internet activa. Nosotros te indicaremos qué pequeña aplicación gratuita descargar para conectarnos al instante.</p>
-            </div>
+        <div class="faq-accordion">
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Cómo funciona la asistencia con Soporte Remoto?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Nos conectamos a tu ordenador a través de un programa de conexión segura (como TeamViewer o AnyDesk) previa autorización tuya. Podrás ver en todo momento lo que hace el técnico en pantalla mientras soluciona la avería o configura tu sistema.</p>
+                </div>
+            </details>
 
-            <div class="faq-item">
-                <h4>¿Realizan servicio de soporte a domicilio?</h4>
-                <p>Sí, ofrecemos asistencia técnica a domicilio en Elche para resolver problemas de red, configuración, periféricos y mantenimientos directamente en tu hogar u oficina.</p>
-            </div>
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Por qué es bueno realizar una reinstalación de sistema operativo?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Con el tiempo, el sistema operativo acumula archivos innecesarios, errores, programas y configuraciones que afectan al rendimiento. Una reinstalación limpia permite empezar desde cero con un sistema totalmente estable, solucionando bloqueos y fallos.</p>
+                </div>
+            </details>
 
-            <div class="faq-item">
-                <h4>¿Cuánto tiempo tarda la reparación o reinstalación?</h4>
-                <p>El soporte remoto suele solucionarse en el mismo día. La mayoría de mantenimientos, reinstalaciones de sistema y cambios a SSD presenciales se realizan en un plazo de 24 a 48 horas hábiles.</p>
-            </div>
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Para qué sirve el mantenimiento físico?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>El mantenimiento físico ayuda a eliminar el polvo y la suciedad acumulada en el interior del ordenador, especialmente en ventiladores y disipadores. Esto mejora la ventilación, reduce la temperatura y evita el desgaste prematuro de componentes.</p>
+                </div>
+            </details>
 
-            <div class="faq-item">
-                <h4>¿Se borran mis datos personales al reinstalar el sistema?</h4>
-                <p>No. Nos aseguramos de proteger tu información y realizar copias de seguridad previas si el trabajo o el formateo lo requiere.</p>
-            </div>
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Qué opciones hay para mejorar el rendimiento de mi ordenador?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Dependiendo de las características de tu equipo, se puede ampliar la memoria RAM, instalar un disco SSD, optimizar el sistema o actualizar controladores para devolverle la velocidad original.</p>
+                </div>
+            </details>
 
-            <div class="faq-item">
-                <h4>¿Tengo que pedir cita antes de acudir?</h4>
-                <p>Puedes consultarnos previamente por WhatsApp para coordinar la atención o iniciar una sesión remota de inmediato.</p>
-            </div>
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Dónde realizan la reinstalación de sistema operativo en Elche?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Realizamos el servicio de reinstalación y optimización limpia en nuestro establecimiento en C. Quinto Albio Horacio, 22, Elche, o si lo prefieres, mediante asistencia remota / a domicilio.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Qué necesito para solicitar el servicio de Soporte Remoto?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Solo necesitas que tu ordenador pueda encender y tener una conexión a Internet activa. Nosotros te indicaremos qué pequeña aplicación gratuita descargar para conectarnos al instante.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Realizan servicio de soporte a domicilio?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Sí, ofrecemos asistencia técnica a domicilio en Elche para resolver problemas de red, configuración, periféricos y mantenimientos directamente en tu hogar u oficina.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Cuánto tiempo tarda la reparación o reinstalación?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>El soporte remoto suele solucionarse en el mismo día. La mayoría de mantenimientos, reinstalaciones de sistema y cambios a SSD presenciales se realizan en un plazo de 24 a 48 horas hábiles.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Se borran mis datos personales al reinstalar el sistema?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>No. Nos aseguramos de proteger tu información y realizar copias de seguridad previas si el trabajo o el formateo lo requiere.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span class="header-text">¿Tengo que pedir cita antes de acudir?</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Puedes consultarnos previamente por WhatsApp para coordinar la atención o iniciar una sesión remota de inmediato.</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="alert-box">
+            <p>💡 <strong>Consejo Experto:</strong> Antes de realizar alguna actualización, es recomendable revisar el equipo para determinar qué componente está limitando su rendimiento y verificar si amerita o no la inversión.</p>
         </div>
     </section>
 
