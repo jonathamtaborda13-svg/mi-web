@@ -376,12 +376,13 @@
         .pricing-table th, .pricing-table td {
             padding: 16px 20px;
             border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
         }
 
         .pricing-table th {
             background: rgba(15, 23, 42, 0.8);
             color: var(--accent-cyan);
-            font-size: 1em;
+            font-size: 0.95em;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -398,6 +399,29 @@
             font-weight: 700;
             color: #a5f3fc;
             white-space: nowrap;
+        }
+
+        .btn-table-wa {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background-color: var(--whatsapp-green);
+            color: #ffffff;
+            padding: 8px 14px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.82em;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-table-wa:hover {
+            background-color: #128c7e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
         }
 
         /* Sección Sistema de Reservas / Citas */
@@ -772,10 +796,10 @@
         </div>
     </section>
 
-    <!-- MODIFICACIÓN 3: Tabla Orientativa de Precios -->
+    <!-- Tabla Orientativa de Precios con Botones Directos a WhatsApp -->
     <section class="section-padding" style="padding-top: 0;">
         <h2 class="section-title">Tarifas Orientativas</h2>
-        <p class="info-subtitle">Precios claros y transparentes sin sorpresas. Presupuesto previo garantizado.</p>
+        <p class="info-subtitle">Haz clic en cualquier servicio para consultar o pedir cita directamente por WhatsApp.</p>
         
         <div class="table-container">
             <table class="pricing-table">
@@ -784,6 +808,7 @@
                         <th>Servicio Informático</th>
                         <th>Descripción Breve</th>
                         <th>Precio</th>
+                        <th style="text-align: center;">Acción</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -791,33 +816,48 @@
                         <td><strong>Soporte Remoto Inmediato</strong></td>
                         <td>Resolución de fallos de software y limpieza de virus a distancia.</td>
                         <td><span class="price-tag">Desde 20 €</span></td>
+                        <td style="text-align: center;">
+                            <a href="https://wa.me/34610326261?text=Hola,%20quisiera%20consultar%20sobre%20el%20servicio%20de%20Soporte%20Remoto%20Inmediato%20(Desde%2020%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>Reinstalación de Sistema Operativo</strong></td>
                         <td>Instalación limpia de Windows + controladores + optimización.</td>
                         <td><span class="price-tag">Desde 30 €</span></td>
+                        <td style="text-align: center;">
+                            <a href="https://wa.me/34610326261?text=Hola,%20me%20interesa%20la%20Reinstalación%20de%20Sistema%20Operativo%20(Desde%2030%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>Mantenimiento Físico y Limpieza</strong></td>
                         <td>Limpieza interna de polvo y cambio de pasta térmica.</td>
                         <td><span class="price-tag">Desde 25 €</span></td>
+                        <td style="text-align: center;">
+                            <a href="https://wa.me/34610326261?text=Hola,%20quisiera%20solicitar%20un%20Mantenimiento%20Físico%20y%20Limpieza%20(Desde%2025%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>Ampliación SSD / Memoria RAM</strong></td>
                         <td>Instalación de componentes y clonación/configuración.</td>
                         <td><span class="price-tag">Desde 25 €</span></td>
+                        <td style="text-align: center;">
+                            <a href="https://wa.me/34610326261?text=Hola,%20quisiera%20información%20para%20una%20Ampliación%20de%20SSD%20o%20RAM%20(Desde%2025%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                        </td>
                     </tr>
                     <tr>
                         <td><strong>Atención a Domicilio / Presencial</strong></td>
                         <td>Desplazamiento y diagnóstico de equipos en Elche.</td>
                         <td><span class="price-tag">Desde 35 €</span></td>
+                        <td style="text-align: center;">
+                            <a href="https://wa.me/34610326261?text=Hola,%20necesito%20Atención%20a%20Domicilio%20o%20Presencial%20en%20Elche%20(Desde%2035%20€)" class="btn-table-wa">💬 Pedir este servicio</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <!-- MODIFICACIÓN 2: Sistema de Reservas / Calendario de Citas -->
+    <!-- Sistema de Reservas / Calendario de Citas -->
     <section class="section-padding" style="background: rgba(15, 23, 42, 0.4); border-radius: 20px;">
         <h2 class="section-title">Agendar Cita Previa</h2>
         <p class="info-subtitle">Reserva tu turno de atención de forma rápida para evitar esperas.</p>
@@ -869,7 +909,7 @@
         </div>
     </section>
 
-    <!-- MODIFICACIÓN 1: Sección Problemas con enlace a WhatsApp personalizado por avería (6 Opciones) -->
+    <!-- Sección Problemas con enlace a WhatsApp personalizado por avería (6 Opciones) -->
     <section class="section-padding">
         <h2 class="section-title">¿Tu ordenador tiene alguno de estos problemas?</h2>
         <p class="averias-subtitle">No te preocupes. Revisamos tu equipo, encontramos el problema y te ofrecemos la solución más adecuada.</p>
@@ -935,7 +975,7 @@
                 </div>
             </details>
 
-            <!-- Opción 6 (NUEVA: No sé qué le pasa) -->
+            <!-- Opción 6 (No sé qué le pasa) -->
             <details class="accordion-item">
                 <summary class="accordion-header">
                     <span class="icon-x">❓</span>
