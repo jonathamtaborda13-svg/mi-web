@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SolucionaPC | Reparación de Portátiles y Ordenadores en Elche</title>
-    <meta name="description" content="SolucionaPC - Tu ordenador, nuestra solución. Servicio técnico especializado en reparación de portátiles y ordenadores en Elche. Cambio de pantallas, SSD, limpieza y servicio a domicilio.">
+    <meta name="description" content="SolucionaPC - Tu ordenador, nuestra solución. Servicio técnico especializado en reparación de portátiles, ordenadores y soporte remoto en Elche. Cambio de pantallas, SSD, limpieza y asistencia a distancia.">
     <meta name="google-site-verification" content="EnQuNtW2YldbrzU7lwMFZ_sAiqarZLurvquIS5WMbFg" />
     
     <!-- Favicon SVG Integrado (Icono de Portátil) -->
@@ -208,6 +208,11 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.5);
         }
 
+        .card-featured {
+            border: 1px solid rgba(6, 182, 212, 0.5);
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.9) 0%, rgba(6, 182, 212, 0.1) 100%);
+        }
+
         .card-icon {
             font-size: 1.8em;
             margin-bottom: 15px;
@@ -223,6 +228,65 @@
         .card p {
             color: var(--text-muted);
             font-size: 0.95em;
+        }
+
+        /* Sección Soporte Remoto Destacada */
+        .remote-support-banner {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .remote-support-banner {
+                text-align: left;
+                align-items: flex-start;
+            }
+        }
+
+        .remote-support-banner h3 {
+            font-size: 1.6em;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .remote-support-banner p {
+            color: var(--text-muted);
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .remote-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .remote-features {
+                justify-content: flex-start;
+            }
+        }
+
+        .remote-pill {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: var(--accent-cyan);
+            font-weight: 600;
         }
 
         /* Sección Dudas / Explicativa */
@@ -452,8 +516,8 @@
         <span class="badge-hero">Servicio Técnico Especializado</span>
         <h1>SolucionaPC</h1>
         <p class="hero-tagline">Tu ordenador, nuestra solución.</p>
-        <p class="hero-p">Reparación de portátiles y ordenadores en Elche. Solucionamos cualquier fallo con un servicio rápido, garantizado y 100% transparente.</p>
-        <a href="https://wa.me/34610326261?text=Hola,%20necesito%20información%20sobre%20la%20reparación%20de%20un%20portátil" class="btn-cta">Pedir Presupuesto Gratis</a>
+        <p class="hero-p">Reparación de portátiles, ordenadores y soporte remoto. Solucionamos cualquier fallo con un servicio rápido, garantizado y 100% transparente.</p>
+        <a href="https://wa.me/34610326261?text=Hola,%20necesito%20información%20sobre%20la%20reparación%20o%20soporte%20remoto" class="btn-cta">Pedir Presupuesto Gratis</a>
     </header>
 
     <!-- Por qué elegirnos / Garantías -->
@@ -461,15 +525,15 @@
         <div class="benefits-container">
             <div class="benefit-item">
                 <h3>⚡ Servicio Rápido</h3>
-                <p>Diagnóstico e intervención en tiempo récord.</p>
+                <p>Diagnóstico e intervención presencial o remota en tiempo récord.</p>
             </div>
             <div class="benefit-item">
                 <h3>🛡️ Garantía de Calidad</h3>
-                <p>Repuestos probados y trabajos garantizados.</p>
+                <p>Repuestos probados y trabajos de asistencia garantizados.</p>
             </div>
             <div class="benefit-item">
                 <h3>🔍 Transparencia</h3>
-                <p>Presupuesto previo antes de reparar.</p>
+                <p>Presupuesto previo antes de cualquier intervención.</p>
             </div>
         </div>
     </section>
@@ -479,6 +543,12 @@
         <h2 class="section-title">Nuestros Servicios</h2>
         
         <div class="services-grid">
+            <div class="card card-featured">
+                <div class="card-icon">🖥️⚡</div>
+                <h3>Soporte Remoto</h3>
+                <p>¿Tienes un problema con tu ordenador? No necesitas desplazarte. Nosotros vamos a ti. Asistencia informática rápida, cómoda y segura desde cualquier lugar.</p>
+            </div>
+
             <div class="card">
                 <div class="card-icon">💻</div>
                 <h3>Reinstalación de Sistema Operativo</h3>
@@ -509,6 +579,17 @@
                 <p>Nos desplazamos hasta tu hogar o negocio en Elche para resolver cualquier inconveniente informático sin que tengas que moverte.</p>
             </div>
         </div>
+
+        <!-- Banner Exclusivo Soporte Remoto -->
+        <div class="remote-support-banner">
+            <h3>🌐 Soporte Remoto: Tu Asistencia Inmediata</h3>
+            <p>Nuestro servicio de soporte remoto te permite recibir asistencia informática rápida, cómoda y segura desde cualquier lugar. Un técnico puede conectarse a tu equipo de forma remota y ayudarte a solucionar el problema sin que tengas que llevar tu ordenador a un establecimiento.</p>
+            <div class="remote-features">
+                <span class="remote-pill">⚡ Sin desplazamiento</span>
+                <span class="remote-pill">🔒 Conexión 100% Segura</span>
+                <span class="remote-pill">⏱️ Solución Inmediata</span>
+            </div>
+        </div>
     </section>
 
     <!-- Sección de Asesoría / Dudas sobre el ordenador -->
@@ -516,6 +597,11 @@
         <div class="section-padding">
             <h2 class="section-title">¿Tienes dudas sobre tu ordenador? Te ayudamos</h2>
             <p class="info-subtitle">Descubre las soluciones más habituales para mejorar el rendimiento, solucionar problemas y mantener tu equipo en óptimas condiciones.</p>
+
+            <div class="info-box">
+                <h3>¿Cómo funciona la asistencia con Soporte Remoto?</h3>
+                <p>Nos conectamos a tu ordenador a través de un programa de conexión segura (como TeamViewer o AnyDesk) previa autorización tuya. Podrás ver en todo momento lo que hace el técnico en pantalla mientras soluciona la avería o configura tu sistema.</p>
+            </div>
 
             <div class="info-box">
                 <h3>¿Por qué es bueno reinstalar el sistema operativo?</h3>
@@ -580,7 +666,7 @@
                     <span class="header-text">Infecciones por virus, publicidad emergente o malware</span>
                 </summary>
                 <div class="accordion-content">
-                    <p>Los virus y programas maliciosos pueden ralentizar el equipo, mostrar publicidad no deseada o incluso poner en riesgo tus archivos. Revisamos y limpiamos el equipo para eliminar estas amenazas y mejorar su seguridad.</p>
+                    <p>Los virus y programas maliciosos pueden ralentizar el equipo, mostrar publicidad no deseada o incluso poner en riesgo tus archivos. Revisamos y limpiamos el equipo de forma presencial o mediante soporte remoto para eliminar estas amenazas.</p>
                 </div>
             </details>
 
@@ -615,13 +701,18 @@
         <h2 class="section-title">Preguntas Frecuentes</h2>
         <div style="max-width: 800px; margin: auto;">
             <div class="faq-item">
+                <h4>¿Qué necesito para solicitar el servicio de Soporte Remoto?</h4>
+                <p>Solo necesitas que tu ordenador pueda encender y tener una conexión a Internet activa. Nosotros te indicaremos qué pequeña aplicación gratuita descargar para conectarnos al instante.</p>
+            </div>
+
+            <div class="faq-item">
                 <h4>¿Realizan servicio de soporte a domicilio?</h4>
                 <p>Sí, ofrecemos asistencia técnica a domicilio en Elche para resolver problemas de red, configuración, periféricos y mantenimientos directamente en tu hogar u oficina.</p>
             </div>
 
             <div class="faq-item">
                 <h4>¿Cuánto tiempo tarda la reparación?</h4>
-                <p>La mayoría de mantenimientos, reinstalaciones y cambios a SSD se realizan en un plazo de 24 a 48 horas hábiles.</p>
+                <p>El soporte remoto suele solucionarse en el mismo día. La mayoría de mantenimientos, reinstalaciones y cambios a SSD presenciales se realizan en un plazo de 24 a 48 horas hábiles.</p>
             </div>
 
             <div class="faq-item">
@@ -631,7 +722,7 @@
 
             <div class="faq-item">
                 <h4>¿Tengo que pedir cita antes de acudir?</h4>
-                <p>Puedes consultarnos previamente por WhatsApp para coordinar la atención y darte un servicio más ágil.</p>
+                <p>Puedes consultarnos previamente por WhatsApp para coordinar la atención o iniciar una sesión remota de inmediato.</p>
             </div>
         </div>
     </section>
@@ -660,7 +751,7 @@
     </footer>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/34610326261?text=Hola,%20necesito%20información%20sobre%20la%20reparación%20de%20un%20portátil" 
+    <a href="https://wa.me/34610326261?text=Hola,%20necesito%20información%20sobre%20el%20soporte%20remoto%20o%20reparación" 
        target="_blank" 
        rel="noopener noreferrer"
        class="whatsapp-float">
