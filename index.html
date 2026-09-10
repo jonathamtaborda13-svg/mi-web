@@ -670,5 +670,28 @@
         WhatsApp
     </a>
 
+    <!-- Integración del Chatbot Tawk.to -->
+    <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    
+    /* Configurar el widget en el lado izquierdo para no tapar el botón de WhatsApp */
+    Tawk_API.customStyle = {
+        visibility: {
+            desktop: { position: 'bottom-left', xOffset: 20, yOffset: 20 },
+            mobile: { position: 'bottom-left', xOffset: 10, yOffset: 10 }
+        }
+    };
+
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6aa2dd631e12513447b8010c/1k2631jac';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--Fin de Tawk.to Script-->
+
 </body>
 </html>
